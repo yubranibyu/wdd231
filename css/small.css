@@ -1,0 +1,73 @@
+/* small.css - estilos base para pantallas pequeñas */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #004d40;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+header img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+nav {
+  background-color: #00695c;
+}
+
+#menu-button {
+  background: none;
+  color: white;
+  font-size: 1.5rem;
+  border: none;
+  padding: 1rem;
+  display: block;
+  width: 100%;
+  text-align: left;
+}
+
+#nav-links {
+  display: none;
+  flex-direction: column;
+  background-color: #004d40;
+}
+
+#nav-links.show {
+  display: flex;
+}
+
+#nav-links li {
+  list-style: none;
+}
+
+#nav-links a {
+  color: white;
+  text-decoration: none;
+  padding: 0.75rem 1rem;
+  display: block;
+}
+
+main {
+  padding: 1rem;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+footer {
+  background-color: #004d40;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
