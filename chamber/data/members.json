@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Café Brasil",
+    "address": "Rua das Flores, 123",
+    "phone": "+55 54 99999-1234",
+    "website": "https://cafebrasil.com",
+    "image": "cafebrasil.jpg",
+    "membership": 3,
+    "info": "El mejor café artesanal de la región."
+  },
+  {
+    "name": "Loja Verde",
+    "address": "Av. Central, 456",
+    "phone": "+55 54 98888-2345",
+    "website": "https://lojaverde.com",
+    "image": "lojaverde.jpg",
+    "membership": 2,
+    "info": "Productos ecológicos y sustentables."
+  },
+  {
+    "name": "Studio Fit",
+    "address": "Rua da Saúde, 789",
+    "phone": "+55 54 97777-3456",
+    "website": "https://studiofit.com",
+    "image": "studiofit.jpg",
+    "membership": 1,
+    "info": "Entrenamiento personal y clases grupales."
+  },
+  {
+    "name": "TechSul",
+    "address": "Av. Industrial, 101",
+    "phone": "+55 54 96666-4567",
+    "website": "https://techsul.com",
+    "image": "techsul.jpg",
+    "membership": 3,
+    "info": "Soluciones tecnológicas para empresas."
+  },
+  {
+    "name": "Florarte",
+    "address": "Rua das Rosas, 202",
+    "phone": "+55 54 95555-5678",
+    "website": "https://florarte.com",
+    "image": "florarte.jpg",
+    "membership": 1,
+    "info": "Arte floral para eventos y decoración."
+  },
+  {
+    "name": "Eco Construções",
+    "address": "Rua do Progresso, 303",
+    "phone": "+55 54 94444-6789",
+    "website": "https://ecoconstrucao.com",
+    "image": "eco.jpg",
+    "membership": 2,
+    "info": "Construcción sustentable con materiales reciclados."
+  },
+  {
+    "name": "Papelaria Criativa",
+    "address": "Av. dos Estudantes, 404",
+    "phone": "+55 54 93333-7890",
+    "website": "https://papelcriativo.com",
+    "image": "papelaria.jpg",
+    "membership": 1,
+    "info": "Material escolar e artigos de papelaria."
+  }
+]
