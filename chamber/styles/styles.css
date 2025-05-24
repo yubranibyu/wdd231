@@ -83,3 +83,198 @@ footer {
   font-size: 0.9rem;
   margin-top: 2rem;
 }
+
+/* General styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #eef6fb;
+  color: #333;
+}
+
+section {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+/* Hero section */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  overflow: hidden;
+}
+
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(42, 77, 105, 0.85);
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 90%;
+  color: white;
+}
+
+.hero-text h1,
+.hero-text h2 {
+  margin: 0.5rem 0;
+}
+
+.cta-button {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #f9aa33;
+  color: #2a4d69;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+/* Events */
+.events {
+  background-color: #e3f2fd;
+}
+
+.events h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.events ul {
+  list-style: none;
+  padding: 0;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.events li {
+  background-color: white;
+  margin-bottom: 0.75rem;
+  padding: 0.75rem 1rem;
+  border-left: 5px solid #2a4d69;
+  font-weight: 500;
+}
+
+/* Weather */
+.weather {
+  background-color: #f1f8e9;
+}
+
+.weather h2 {
+  font-size: 1.6rem;
+}
+
+#weather-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+/* Spotlights */
+.spotlights {
+  background-color: #fffde7;
+}
+
+.spotlights h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+#spotlights {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.spotlight-card {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.spotlight-card img {
+  width: 80px;
+  height: auto;
+  margin-bottom: 0.5rem;
+}
+
+nav {
+  background-color: #2a4d69;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#menu-toggle {
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  color: white;
+  cursor: pointer;
+  display: none;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+nav li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Responsive nav */
+@media (max-width: 768px) {
+  #menu-toggle {
+    display: block;
+  }
+
+  nav ul {
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background-color: #2a4d69;
+    width: 200px;
+    padding: 1rem;
+    box-shadow: -2px 4px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  nav ul.hidden {
+    display: none;
+  }
+
+  nav ul li {
+    margin: 0.5rem 0;
+  }
+}

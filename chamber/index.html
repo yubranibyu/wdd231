@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Chamber of Commerce Home Page" />
+  <meta name="author" content="Yubrani Yaguaramay" />
+  <title>Chamber Home</title>
+  <link rel="icon" href="images/chamberfavicom.png" />
+  <link rel="stylesheet" href="styles/normalize.css" />
+  <link rel="stylesheet" href="styles/styles.css" />
+</head>
+<body>
+  <header>
+  <nav>
+    <button id="menu-toggle" aria-label="Open Menu">&#9776;</button>
+    <ul id="menu" class="hidden">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="directory.html">Directory</a></li>
+      <li><a href="join.html">Join</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+  <main>
+    <!-- Hero section -->
+    <section class="hero">
+      <img src="images/hero.jpg" alt="Chamber Hero Image" />
+      <div class="hero-text">
+        <h2>Empowering Local Businesses</h2>
+        <a href="#" class="cta-button">Join the Chamber</a>
+      </div>
+    </section>
+
+    <!-- Current Events -->
+    <section class="events">
+      <h2>Upcoming Events</h2>
+      <ul>
+        <li><strong>Business Networking Night</strong> - May 30, 7 PM</li>
+        <li><strong>Eco Workshop</strong> - June 3, 2 PM</li>
+        <li><strong>Small Business Fair</strong> - June 10, 10 AM</li>
+      </ul>
+    </section>
+
+    <!-- Weather Section -->
+    <section class="weather">
+      <h2>Weather in Caxias do Sul</h2>
+      <p>Current: <span id="current-temp"></span> °C - <span id="weather-desc"></span></p>
+      <h3>3-Day Forecast</h3>
+      <ul id="forecast"></ul>
+    </section>
+
+    <!-- Spotlights -->
+    <section class="spotlights">
+      <h2>Business Spotlights</h2>
+      <div id="spotlights" class="grid-view"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Contact us at info@yourchamber.com | +55 54 99999-0000</p>
+    <p>&copy; <span id="year"></span> | Yubrani Yaguaramay | WDD 231</p>
+    <p>Last Modified: <span id="lastModified"></span></p>
+  </footer>
+
+  <script src="scripts/home.js"></script>
+</body>
+</html>
