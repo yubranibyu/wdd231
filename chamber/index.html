@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Welcome to the Caxias do Sul Chamber of Commerce. Discover events, local businesses, and opportunities to grow our community together." />
   <meta name="author" content="Yubrani Yaguaramay" />
@@ -18,55 +18,62 @@
   <meta property="og:image" content="images/hero.jpg" />
   <meta property="og:url" content="https://yubrani.github.io/wdd231/index.html" />
   <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://yubrani.github.io/wdd231/chamber/images/hero.jpg">
+  <meta property="og:image:alt" content="Caxias do Sul Chamber of Commerce Hero Image" />
+  <meta property="og:site_name" content="Caxias do Sul Chamber of Commerce" />
+  <meta property="og:url" content="https://yubrani.github.io/wdd231/chamber/index.html">
+
 </head>
 
 <body>
   <header>
-  <nav>
-    <button id="menu-toggle" aria-label="Open Menu">&#9776;</button>
-    <ul id="menu" class="hidden">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="directory.html">Directory</a></li>
-      <li><a href="join.html">Join</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
-  </nav>
-</header>
+    <nav>
+      <button id="menu-toggle" aria-label="Open Menu">&#9776;</button>
+      <ul id="menu" class="hidden">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-
+  <div class="banner">
+    <h1>Caxias do Sul Chamber of Commerce</h1>
+    <p>Empowering Local Businesses and Community</p>
   <main>
-    <!-- Hero section -->
-    <section class="hero">
-      <img src="images/hero.jpg" alt="Chamber Hero Image" />
-      <div class="hero-text">
-        <h2>Empowering Local Businesses</h2>
-        <a href="#" class="cta-button">Join the Chamber</a>
-      </div>
-    </section>
+      <!-- Hero section -->
+       
+      <section class="hero">
+        <img src="images/hero.jpg" alt="Chamber Hero Image" />
+        <div class="hero-text">
+          <h2>Empowering Local Businesses</h2>
+          <a href="#" class="cta-button">Join the Chamber</a>
+        </div>
+      </section>
 
-    <!-- Current Events -->
+      <!-- Current Events -->
     <section class="events">
       <h2>Upcoming Events</h2>
-      <ul>
-        <li><strong>Business Networking Night</strong> - May 30, 7 PM</li>
-        <li><strong>Eco Workshop</strong> - June 3, 2 PM</li>
-        <li><strong>Small Business Fair</strong> - June 10, 10 AM</li>
+      <ul id="events-list">
+        <!-- Aquí se insertan los eventos -->
       </ul>
     </section>
 
-    <!-- Weather Section -->
-    <section class="weather">
-      <h2>Weather in Caxias do Sul</h2>
-      <p>Current: <span id="current-temp"></span> °C - <span id="weather-desc"></span></p>
-      <h3>3-Day Forecast</h3>
-      <ul id="forecast"></ul>
-    </section>
 
-    <!-- Spotlights -->
-    <section class="spotlights">
-      <h2>Business Spotlights</h2>
-      <div id="spotlights" class="grid-view"></div>
-    </section>
+      <!-- Weather Section -->
+      <section class="weather">
+        <h2>Weather in Caxias do Sul</h2>
+        <p>Current: <span id="current-temp"></span> °C - <span id="weather-desc"></span></p>
+        <h3>3-Day Forecast</h3>
+        <ul id="forecast"></ul>
+      </section>
+
+      <!-- Spotlights -->
+      <section class="spotlights">
+        <h2>Business Spotlights</h2>
+        <div id="spotlights" class="grid-view"></div>
+      </section>
   </main>
 
   <footer>

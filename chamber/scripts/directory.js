@@ -53,3 +53,26 @@ document.getElementById("lastModified").textContent = document.lastModified;
 
 // Fetch members on page load
 fetchMembers();
+
+const upcomingEvents = [
+  { name: "Business Networking Night", date: "2025-05-30", time: "7 PM" },
+  { name: "Eco Workshop", date: "2025-06-03", time: "2 PM" },
+  { name: "Small Business Fair", date: "2025-06-10", time: "10 AM" },
+];
+
+function displayEvents(events) {
+  const eventsList = document.getElementById("events-list");
+  eventsList.innerHTML = ""; // limpia lista
+
+  events.forEach(event => {
+    const li = document.createElement("li");
+    li.classList.add("event-item");
+    li.innerHTML = `
+      <div class="event-name">${event.name}</div>
+      <div class="event-date">${new Date(event.date).toLocaleDateString()} at ${event.time}</div>
+    `;
+    eventsList.appendChild(li);
+  });
+}
+
+displayEvents(upcomingEvents);
