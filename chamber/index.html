@@ -1,88 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Welcome to the Caxias do Sul Chamber of Commerce. Discover events, local businesses, and opportunities to grow our community together." />
   <meta name="author" content="Yubrani Yaguaramay" />
   
   <title>Caxias do Sul Chamber of Commerce | Empowering Local Businesses</title>
   
-  <link rel="icon" href="images/chamberfavicon.png">
-  <link rel="stylesheet" href="styles/normalize.css">
-  <link rel="stylesheet" href="styles/styles.css">
-
+  <link rel="icon" href="images/chamberfavicon.png" />
+  <link rel="stylesheet" href="styles/normalize.css" />
+  <link rel="stylesheet" href="styles/styles.css" />
+  
   <!-- Open Graph Meta Tags -->
-  <meta property="og:title" content="Caxias do Sul Chamber of Commerce">
-  <meta property="og:description" content="Connecting businesses and the community through events, support, and opportunities in Caxias do Sul.">
-  <meta property="og:image" content="images/hero.jpg">
-  <meta property="og:url" content="https://yubrani.github.io/wdd231/index.html">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="https://yubrani.github.io/wdd231/chamber/images/hero.jpg">
-  <meta property="og:image:alt" content="Caxias do Sul Chamber of Commerce Hero Image">
-  <meta property="og:site_name" content="Caxias do Sul Chamber of Commerce">
-  <meta property="og:url" content="https://yubrani.github.io/wdd231/chamber/index.html">
+  <meta property="og:title" content="Caxias do Sul Chamber of Commerce" />
+  <meta property="og:description" content="Connecting businesses and the community through events, support, and opportunities in Caxias do Sul." />
+  <meta property="og:image" content="https://yubrani.github.io/wdd231/chamber/images/hero.jpg" />
+  <meta property="og:url" content="https://yubrani.github.io/wdd231/chamber/index.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image:alt" content="Caxias do Sul Chamber of Commerce Hero Image" />
+  <meta property="og:site_name" content="Caxias do Sul Chamber of Commerce" />
 
 </head>
 
 <body>
+  
   <header>
-    <nav>
-      <button id="menu-toggle" aria-label="Open Menu">&#9776;</button>
-      <ul id="menu" class="hidden">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="directory.html">Directory</a></li>
-        <li><a href="join.html">Join</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
+    <div class="header-container">
+      <img src="images/chamberfavicom.png" alt="Chamber Logo" class="logo" />
+      <h1>Caxias Chamber</h1>
+      <button id="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
+      <nav>
+        <ul id="nav-menu" class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="discover.html">Discover</a></li>
+          <li><a href="directory.html">Directory</a></li>
+          <li><a href="join.html">Join</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  
   <main>
-    <div class="banner">
-     <h1>Caxias do Sul Chamber of Commerce</h1>
-    </div>
-      <!-- Hero section -->
-       
-      <section class="hero">
-        <img src="images/hero.jpg" alt="Chamber Hero Image" />
-        <div class="hero-text">
-          <h2>Empowering Local Businesses</h2>
-          <a href="#" class="cta-button">Join the Chamber</a>
-        </div>
-      </section>
+    <section class="hero">
+      <picture>
+        <source srcset="images/hero-small.webp" media="(max-width: 600px)" />
+        <img src="images/hero.jpg" alt="Caxias landscape" />
+      </picture>
+      <div class="hero-text">
+        <h2>Connect. Grow. Thrive.</h2>
+        <a href="join.html" class="cta-button">Join the Chamber</a>
+      </div>
+    </section>
 
-        <!-- Current Events -->
-      <section class="events">
-        <h2>Upcoming Events</h2>
-        <ul id="events-list">
-          <!-- Aquí se insertan los eventos -->
-        </ul>
-      </section>
+    <section class="events">
+      <h2>Current Events</h2>
+      <ul>
+        <li>📅 Business Networking Night – June 3rd</li>
+        <li>📢 Small Business Workshop – June 6th</li>
+        <li>🎉 Community Fair – June 10th</li>
+      </ul>
+    </section>
 
-
-      <!-- Weather Section -->
-      <section class="weather">
-        <h2>Weather in Caxias do Sul</h2>
-        <p>Current: <span id="current-temp"></span> °C - <span id="weather-desc"></span></p>
+    <section class="weather">
+      <h2>Weather in Caxias do Sul</h2>
+      <div id="weather-today">
+        <p>Temperature: <span id="temp">--</span> °C</p>
+        <p>Condition: <span id="desc">Loading...</span></p>
+        <img id="icon" src="" alt="Weather icon" />
+      </div>
+      <div class="forecast">
         <h3>3-Day Forecast</h3>
-        <ul id="forecast"></ul>
-      </section>
+        <ul id="forecast-list"></ul>
+      </div>
+    </section>
 
-      <!-- Spotlights -->
-      <section class="spotlights">
-        <h2>Business Spotlights</h2>
-        <div id="spotlights" class="grid-view"></div>
-      </section>
-   </main>
+    <section class="spotlights">
+      <h2>Member Spotlights</h2>
+      <div id="spotlight-container"></div>
+    </section>
+  </main>
 
   <footer>
-    <p>Contact us at info@yourchamber.com | +55 54 99999-0000</p>
-    <p>&copy; <span id="year"></span> | Yubrani Yaguaramay | WDD 231</p>
-    <p>Last Modified: <span id="lastModified"></span></p>
+    <p>&copy; <span id="current-year"></span> Caxias Chamber of Commerce | Yubrani Yaguaramay</p>
+    <p id="last-modified"></p>
   </footer>
 
-  <script src="scripts/home.js"></script>
+  <script src="scripts/chamber.js"></script>
 </body>
 </html>

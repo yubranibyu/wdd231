@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Join the Chamber</title>
+  <link rel="stylesheet" href="styles/base.css" />
+  <link rel="stylesheet" href="styles/join.css" />
+</head>
+<body>
+  <header>
+    <!-- Common header -->
+  </header>
+
+  <nav>
+    <!-- Common navigation -->
+  </nav>
+
+  <main>
+    <h1>Join the Chamber</h1>
+
+    <form method="get" action="thankyou.html">
+      <label>
+        First Name:
+        <input type="text" name="fname" title="First Name" required autocomplete="given-name">
+      </label>
+
+      <label>
+        Last Name:
+        <input type="text" name="lname" title="Last Name" required autocomplete="family-name">
+      </label>
+
+      <label>
+        Organizational Title:
+        <input type="text" name="orgtitle" title="Organizational Title" autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}">
+      </label>
+
+      <label>
+        Email:
+        <input type="email" name="email" title="Email Address" required autocomplete="email" placeholder="example@domain.com">
+      </label>
+
+      <label>
+        Mobile Phone:
+        <input type="tel" name="phone" title="Mobile Phone Number" required autocomplete="tel">
+      </label>
+
+      <label>
+        Business/Organization Name:
+        <input type="text" name="organization" title="Business or Organization Name" required autocomplete="organization">
+      </label>
+
+      <label>
+        Membership Level:
+        <select name="membership" title="Membership Level">
+          <option value="np">NP Membership (Free)</option>
+          <option value="bronze">Bronze Membership</option>
+          <option value="silver">Silver Membership</option>
+          <option value="gold">Gold Membership</option>
+        </select>
+      </label>
+
+      <label>
+        Business Description:
+        <textarea name="description" title="Business Description"></textarea>
+      </label>
+
+      <input type="hidden" name="timestamp" id="timestamp">
+
+      <input type="submit" value="Join Now">
+    </form>
+
+    <section class="membership-cards">
+      <div class="card" id="np-card">
+        <h2>NP Membership</h2>
+        <a href="#np-modal">View Benefits</a>
+      </div>
+      <div class="card" id="bronze-card">
+        <h2>Bronze Membership</h2>
+        <a href="#bronze-modal">View Benefits</a>
+      </div>
+      <div class="card" id="silver-card">
+        <h2>Silver Membership</h2>
+        <a href="#silver-modal">View Benefits</a>
+      </div>
+      <div class="card" id="gold-card">
+        <h2>Gold Membership</h2>
+        <a href="#gold-modal">View Benefits</a>
+      </div>
+    </section>
+
+    <!-- Modals -->
+    <dialog id="np-modal" aria-labelledby="np-title" aria-describedby="np-desc">
+      <h2 id="np-title">NP Membership Benefits</h2>
+      <p id="np-desc">Access to events, basic training, and networking opportunities.</p>
+      <button onclick="document.getElementById('np-modal').close()">Close</button>
+    </dialog>
+
+    <dialog id="bronze-modal">
+      <h2>Bronze Membership Benefits</h2>
+      <p>Includes NP benefits plus social media mention and listing in directory.</p>
+      <button onclick="document.getElementById('bronze-modal').close()">Close</button>
+    </dialog>
+    <dialog id="silver-modal">
+      <h2>Silver Membership Benefits</h2>
+      <p>Includes Bronze benefits plus homepage spotlight and 10% event discount.</p>
+      <button onclick="document.getElementById('silver-modal').close()">Close</button>
+    </dialog>
+    <dialog id="gold-modal">
+      <h2>Gold Membership Benefits</h2>
+      <p>All benefits plus priority advertising, VIP events and featured blog post.</p>
+      <button onclick="document.getElementById('gold-modal').close()">Close</button>
+    </dialog>
+  </main>
+
+  <footer>
+    <!-- Common footer -->
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      document.getElementById("timestamp").value = new Date().toISOString();
+
+      // Add modal open handlers
+      document.querySelectorAll('.membership-cards a').forEach(link => {
+        link.addEventListener('click', event => {
+          event.preventDefault();
+          const modalId = link.getAttribute('href').substring(1);
+          document.getElementById(modalId).showModal();
+        });
+      });
+    });
+  </script>
+</body>
+</html>

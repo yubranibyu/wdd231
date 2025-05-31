@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thank You - Chamber of Commerce</title>
+  <link rel="stylesheet" href="styles/base.css" />
+  <link rel="stylesheet" href="styles/join.css" />
+</head>
+<body>
+  <header>
+    <h1>Chamber of Commerce</h1>
+    <!-- Your site navigation here -->
+  </header>
+  <main>
+    <section>
+      <h2>Thank You for Joining!</h2>
+      <p>We appreciate your interest in becoming a member of our Chamber of Commerce.</p>
+
+      <h3>Your Submitted Information:</h3>
+      <ul id="submitted-info">
+        <li><strong>First Name:</strong> <span id="firstName"></span></li>
+        <li><strong>Last Name:</strong> <span id="lastName"></span></li>
+        <li><strong>Email:</strong> <span id="email"></span></li>
+        <li><strong>Phone:</strong> <span id="phone"></span></li>
+        <li><strong>Business Name:</strong> <span id="organization"></span></li>
+        <li><strong>Submission Time:</strong> <span id="timestamp"></span></li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; <span id="year"></span> Chamber of Commerce</p>
+  </footer>
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    document.getElementById("firstName").textContent = params.get("fname") || "-";
+    document.getElementById("lastName").textContent = params.get("lname") || "-";
+    document.getElementById("email").textContent = params.get("email") || "-";
+    document.getElementById("phone").textContent = params.get("phone") || "-";
+    document.getElementById("organization").textContent = params.get("organization") || "-";
+    document.getElementById("timestamp").textContent = params.get("timestamp") || "-";
+
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
