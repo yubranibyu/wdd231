@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Igreja de São Pelegrino",
+    "address": "Av. Independência, 2795 - São Pelegrino, Caxias do Sul - RS",
+    "description": "Famosa por sus murales de Aldo Locatelli y su arquitectura neogótica, es uno de los templos más emblemáticos de la ciudad.",
+    "image": "images/igreja-sao-pelegrino.webp"
+  },
+  {
+    "name": "Catedral de Santa Teresa",
+    "address": "Praça Dante Alighieri, Centro, Caxias do Sul - RS",
+    "description": "Inaugurada en 1899, esta catedral neogótica es un símbolo de la herencia italiana en la región.",
+    "image": "images/catedral-santa-teresa.webp"
+  },
+  {
+    "name": "Praça Dante Alighieri",
+    "address": "Centro, Caxias do Sul - RS",
+    "description": "La plaza más antigua y tradicional de la ciudad, rodeada de edificios históricos y la catedral.",
+    "image": "images/praca-dante-alighieri.webp"
+  },
+  {
+    "name": "Parque Getúlio Vargas (Parque dos Macaquinhos)",
+    "address": "Rua Ernesto Alves, s/n - Centro, Caxias do Sul - RS",
+    "description": "Espacio verde urbano con áreas de recreación, ciclovías y un pequeño zoológico.",
+    "image": "images/parque-getulio-vargas.webp"
+  },
+  {
+    "name": "Jardín Botánico de Caxias do Sul",
+    "address": "Rua Atílio Andreazza, s/n - Santa Catarina, Caxias do Sul - RS",
+    "description": "Parque de 60 hectáreas con lagos, senderos y una rica biodiversidad.",
+    "image": "images/jardim-botanico.webp"
+  },
+  {
+    "name": "Vinícola Cantina Tonet",
+    "address": "Linha 40, Caxias do Sul - RS",
+    "description": "Tradicional bodega familiar que ofrece visitas guiadas y degustaciones de vinos.",
+    "image": "images/cantina-tonet.webp"
+  },
+  {
+    "name": "Château Lacave",
+    "address": "Rua Matteo Gianella, 5700 - Ana Rech, Caxias do Sul - RS",
+    "description": "Castillo de estilo medieval construido en piedra basáltica, actualmente alberga una vinícola.",
+    "image": "images/chateau-lacave.webp"
+  },
+  {
+    "name": "Monumento ao Imigrante",
+    "address": "BR-116, Km 152 - Lourdes, Caxias do Sul - RS",
+    "description": "Escultura que homenajea a los inmigrantes italianos que colonizaron la región.",
+    "image": "images/monumento-imigrante.webp"
+  }
+]
