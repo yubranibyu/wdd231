@@ -107,6 +107,12 @@ h1 {
   margin-bottom: 1rem;
   text-align: center;
 }
+
+.header-title {
+  font-size: 2.5rem;
+  color: white;
+  margin-bottom: 0.5rem;
+}
 /* Menu styles */
 /* General reset */
 * {
