@@ -30,3 +30,14 @@ document.addEventListener("DOMContentLoaded", () => {
       container.innerHTML = `<p>Error al cargar lugares: ${error.message}</p>`;
     });
 });
+
+const menuToggle = document.getElementById('menu-toggle');
+const navMenu = document.getElementById('nav-menu');
+
+menuToggle.addEventListener('click', () => {
+  navMenu.classList.toggle('open');
+
+  // Update accessibility state
+  const expanded = menuToggle.getAttribute('aria-expanded') === 'true';
+  menuToggle.setAttribute('aria-expanded', !expanded);
+});
