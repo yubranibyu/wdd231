@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Parque dos Macaquinhos",
+    "image": "images/macaquinhos.webp",
+    "address": "Rua Pedro Tomasi, Caxias do Sul, RS",
+    "description": "Un parque natural con senderos, zonas para picnic y avistamiento de monos capuchinos."
+  },
+  {
+    "name": "Museo Municipal",
+    "image": "images/museu.webp",
+    "address": "Rua Visconde de Pelotas, Caxias do Sul, RS",
+    "description": "Museo histórico que cuenta la historia de la inmigración italiana en la región."
+  },
+  {
+    "name": "Praça Dante Alighieri",
+    "image": "images/praça.webp",
+    "address": "Centro, Caxias do Sul, RS",
+    "description": "Plaza principal con eventos culturales, feria de libros y espacio para caminar."
+  },
+  {
+    "name": "Vinícola Don Giovanni",
+    "image": "images/vinicola.webp",
+    "address": "Rod. Linha Amadeu, Pinto Bandeira, RS",
+    "description": "Bodega famosa por su espumante y tours guiados por los viñedos."
+  },
+  {
+    "name": "Igreja São Pelegrino",
+    "image": "images/igreja.webp",
+    "address": "Av. Independência, Caxias do Sul, RS",
+    "description": "Iglesia icónica con pinturas de Aldo Locatelli y arquitectura italiana."
+  },
+  {
+    "name": "Zoológico da UCS",
+    "image": "images/zoo.webp",
+    "address": "R. Francisco Getúlio Vargas, Caxias do Sul, RS",
+    "description": "Pequeño zoológico educativo mantenido por la universidad local."
+  },
+  {
+    "name": "Shopping Iguatemi",
+    "image": "images/iguatemi.webp",
+    "address": "Av. Iguatemi, Caxias do Sul, RS",
+    "description": "Centro comercial con tiendas, cine y opciones gastronómicas."
+  },
+  {
+    "name": "Mirante do Parque da Festa da Uva",
+    "image": "images/festadauva.webp",
+    "address": "Rua Ludovico Cavinato, Caxias do Sul, RS",
+    "description": "Vista panorámica de la ciudad desde el mirador del parque."
+  }
+]
