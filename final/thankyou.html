@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Thank You - Interactive Game Catalog</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Thank You!</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="attributions.html">Attributions</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Thank You!</h2>
+    <p id="thanks-message">Here is the information you submitted:</p>
+    <ul>
+      <li><strong>Name:</strong> <span id="name"></span></li>
+      <li><strong>Email:</strong> <span id="email"></span></li>
+      <li><strong>Message:</strong> <span id="message"></span></li>
+    </ul>
+  </main>
+  <script src="js/thanks.js"></script>
+
+  <footer>
+    <p>&copy; 2025 Interactive Game Catalog</p>
+  </footer>
+
+  <script>
+    // Mostrar datos del query string
+    const params = new URLSearchParams(window.location.search);
+    document.getElementById('name').textContent = params.get('name') || 'N/A';
+    document.getElementById('email').textContent = params.get('email') || 'N/A';
+    document.getElementById('subject').textContent = params.get('subject') || 'N/A';
+    document.getElementById('message').textContent = params.get('message') || 'N/A';
+  </script>
+</body>
+</html>

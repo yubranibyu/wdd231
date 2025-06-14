@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Interactive Game Catalog</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Interactive Game Catalog</h1>
+    <header>
+  <nav class="navbar">
+    <a href="index.html" class="logo">🎮 Game Catalog</a>
+    <button class="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="thankyou.html">Thanks</a></li>
+      <li><a href="attributions.html">Attributions</a></li>
+    </ul>
+  </nav>
+</header>
+
+  </header>
+
+  <main>
+    <section id="games-container" aria-label="Game catalog">
+      <!-- Juegos dinámicos aquí -->
+    </section>
+
+    <dialog id="game-modal" aria-modal="true" role="dialog">
+      <button id="close-modal" aria-label="Close modal">&times;</button>
+      <h2 id="modal-title"></h2>
+      <img id="modal-image" alt="" />
+      <p id="modal-description"></p>
+      <p><strong>Genre:</strong> <span id="modal-genre"></span></p>
+      <p><strong>Release Year:</strong> <span id="modal-year"></span></p>
+      <button id="favorite-btn">Add to Favorites</button>
+    </dialog>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Interactive Game Catalog</p>
+  </footer>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
