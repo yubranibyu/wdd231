@@ -4,10 +4,14 @@ document.addEventListener('DOMContentLoaded', () => {
   form.addEventListener('submit', (event) => {
     event.preventDefault();
 
-    const formData = {
+   const formData = {
+    
       name: form.elements['name'].value,
       email: form.elements['email'].value,
+      subject: form.elements['subject'].value,
       message: form.elements['message'].value
+
+
     };
 
     localStorage.setItem('contactFormData', JSON.stringify(formData));

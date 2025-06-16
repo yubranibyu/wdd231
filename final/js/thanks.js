@@ -9,3 +9,4 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('thanks-message').textContent = 'No form data found.';
   }
 });
+

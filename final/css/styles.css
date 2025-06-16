@@ -14,6 +14,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  background-color: rgb(4, 24, 41);
 }
 
 header, footer {
@@ -69,7 +70,7 @@ main {
 }
 
 .game-card {
-  background-color: white;
+  background-color: rgb(11, 175, 66);
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   padding: 1rem;

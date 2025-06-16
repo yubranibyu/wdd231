@@ -11,10 +11,12 @@
     <h1>Thank You!</h1>
     <nav>
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="attributions.html">Attributions</a></li>
+        <li><strong>Name:</strong> <span id="name"></span></li>
+        <li><strong>Email:</strong> <span id="email"></span></li>
+        <li><strong>Subject:</strong> <span id="subject"></span></li>
+        <li><strong>Message:</strong> <span id="message"></span></li>
       </ul>
+
     </nav>
   </header>
 
@@ -33,13 +35,14 @@
     <p>&copy; 2025 Interactive Game Catalog</p>
   </footer>
 
-  <script>
-    // Mostrar datos del query string
-    const params = new URLSearchParams(window.location.search);
-    document.getElementById('name').textContent = params.get('name') || 'N/A';
-    document.getElementById('email').textContent = params.get('email') || 'N/A';
-    document.getElementById('subject').textContent = params.get('subject') || 'N/A';
-    document.getElementById('message').textContent = params.get('message') || 'N/A';
-  </script>
+<script>
+  // Mostrar datos del query string
+  const params = new URLSearchParams(window.location.search);
+  document.getElementById('name').textContent = params.get('name') || 'N/A';
+  document.getElementById('email').textContent = params.get('email') || 'N/A';
+  document.getElementById('subject').textContent = params.get('subject') || 'N/A';
+  document.getElementById('message').textContent = params.get('message') || 'N/A';
+</script>
+
 </body>
 </html>

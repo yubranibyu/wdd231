@@ -4,7 +4,7 @@
     "title": "The Legend of Zelda: Breath of the Wild",
     "genre": "Action-adventure",
     "releaseYear": 2017,
-    "image": "images/zelda.jpg",
+    "image": "../images/zelda.jpg",
     "description": "An open-world adventure game where Link explores Hyrule to save Princess Zelda."
   },
   {
@@ -12,7 +12,7 @@
     "title": "Super Mario Odyssey",
     "genre": "Platform",
     "releaseYear": 2017,
-    "image": "images/mario.jpg",
+    "image": "../images/mario.jpg",
     "description": "Mario travels across various worlds on a quest to rescue Princess Peach."
   },
   {
@@ -20,7 +20,7 @@
     "title": "Minecraft",
     "genre": "Sandbox, Survival",
     "releaseYear": 2011,
-    "image": "images/minecraft.jpg",
+    "image": "../images/minecraft.jpg",
     "description": "A block-building sandbox game with survival elements and endless creativity."
   },
   {
@@ -28,7 +28,7 @@
     "title": "Fortnite",
     "genre": "Battle Royale",
     "releaseYear": 2017,
-    "image": "images/fortnite.jpg",
+    "image": "../images/fortnite.jpg",
     "description": "A fast-paced multiplayer battle royale game with building mechanics."
   },
   {
@@ -36,7 +36,7 @@
     "title": "The Witcher 3: Wild Hunt",
     "genre": "RPG",
     "releaseYear": 2015,
-    "image": "images/witcher3.jpg",
+    "image": "../images/witcher3.jpg",
     "description": "A story-driven RPG where Geralt hunts monsters in a vast fantasy world."
   },
   {
@@ -44,7 +44,7 @@
     "title": "Among Us",
     "genre": "Social Deduction",
     "releaseYear": 2018,
-    "image": "images/amongus.jpg",
+    "image": "../images/amongus.jpg",
     "description": "Multiplayer game where crewmates complete tasks while impostors sabotage."
   },
   {
@@ -52,7 +52,7 @@
     "title": "Celeste",
     "genre": "Platform",
     "releaseYear": 2018,
-    "image": "images/celeste.jpg",
+    "image": "../images/celeste.jpg",
     "description": "A challenging platformer about climbing a mountain and overcoming mental challenges."
   },
   {
@@ -60,7 +60,7 @@
     "title": "Hades",
     "genre": "Rogue-like",
     "releaseYear": 2020,
-    "image": "images/hades.jpg",
+    "image": "../images/hades.jpg",
     "description": "An action-packed rogue-like dungeon crawler set in Greek mythology."
   },
   {
@@ -68,7 +68,7 @@
     "title": "Stardew Valley",
     "genre": "Simulation, RPG",
     "releaseYear": 2016,
-    "image": "images/stardewvalley.jpg",
+    "image": "../images/stardewvalley.jpg",
     "description": "A farming simulator with RPG elements and town relationships."
   },
   {
@@ -76,7 +76,7 @@
     "title": "Call of Duty: Warzone",
     "genre": "Battle Royale",
     "releaseYear": 2020,
-    "image": "images/warzone.jpg",
+    "image": "../images/warzone.jpg",
     "description": "A popular free-to-play battle royale game set in the Call of Duty universe."
   },
   {
@@ -84,7 +84,7 @@
     "title": "God of War",
     "genre": "Action",
     "releaseYear": 2018,
-    "image": "images/godofwar.jpg",
+    "image": "../images/godofwar.jpg",
     "description": "A story-driven action game following Kratos and his son in Norse mythology."
   },
   {
@@ -92,7 +92,7 @@
     "title": "Animal Crossing: New Horizons",
     "genre": "Simulation",
     "releaseYear": 2020,
-    "image": "images/animalcrossing.jpg",
+    "image": "../images/animalcrossing.jpg",
     "description": "A relaxing social simulation game on a deserted island."
   },
   {
@@ -100,7 +100,7 @@
     "title": "Overwatch",
     "genre": "FPS",
     "releaseYear": 2016,
-    "image": "images/overwatch.jpg",
+    "image": "../images/overwatch.jpg",
     "description": "Team-based first-person shooter with a diverse cast of heroes."
   },
   {
@@ -108,7 +108,7 @@
     "title": "Dark Souls III",
     "genre": "Action RPG",
     "releaseYear": 2016,
-    "image": "images/darksouls3.jpg",
+    "image": "../images/darksouls3.jpg",
     "description": "A challenging action RPG known for its punishing difficulty and deep lore."
   },
   {
@@ -116,7 +116,7 @@
     "title": "Fall Guys",
     "genre": "Battle Royale, Party",
     "releaseYear": 2020,
-    "image": "images/fallguys.jpg",
+    "image": "../images/fallguys.jpg",
     "description": "A fun battle royale party game with mini-games and colorful characters."
   }
 ]
